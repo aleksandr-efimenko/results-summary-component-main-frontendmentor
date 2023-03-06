@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Results summary component</title>
-
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="card">
+    <div class="score-card">
+      <h2 class="light-lavender">Your Result</h2>
+      <div class="score-number-round-container">
+        <div id="score-numbers">
+          <h3>76</h3>
+          <p class="light-lavender">of 100</p>
+        </div>
+      </div>
+      <div class="score-description">
+        <h1>Great</h1>
+        <p class="light-lavender">Your performance exceed 65% of the people conducting the test here!</p>
+      </div>
+    </div>
+    <div class="summary-card">
+      <h2>Summary</h2>
+      <ul class="summary-options-group">
+        <li id="reaction">
+          <p>Reaction</p>
+          <p>80 / 100</p>
+        </li>
+        <li id="memory">
+          <p> Memory </p>
+          <p> 92 / 100 </p>
+        </li>
+        <li id="verbal">
+          <p> Verbal </p>
+          <p> 61 / 100 </p>
+        </li>
+        <li id="visual">
+          <p> Visual </p>
+          <p>72 / 100</p>
+        </li>
+      </ul>
+      <button id="continue">Continue</button>
+      </ul>
+    </div>
+  </main>
 </body>
+
 </html>
