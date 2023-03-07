@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    font-family: 'Hanken Grotesk';
 }
 
 body {
@@ -11,10 +13,24 @@ body {
     margin: 0;
     color: hsl(0, 0%, 100%);
     text-align: center;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 2.625rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 .card {
+    width: 736px;
+    height: 512px;
     background-color: hsl(0, 0%, 100%);
     display: flex;
     border-radius: 32px;
@@ -47,33 +63,121 @@ body {
 
 .score-number-round-container h3 {
     font-size: 4.5rem;
-    font-weight: 800;
+    font-style: normal;
+    font-weight: 700;
     margin: 0;
+    margin-top: 0.25rem;
+    line-height: 4.5rem;
+}
+
+.score-number-round-container p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.52;
+}
+
+.score-description {
+    margin: 1.75rem 3.375rem 2.875rem;
+}
+
+
+.score-description p {
+    margin: .875rem 0 9px 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.summary-card {
+    width: 50%;
 }
 
 .summary-card h2 {
+    margin: 2.375rem 2.5rem 1.75rem 2.5rem;
+    text-align: left;
     color: hsl(224, 30%, 27%);
+    font-weight: 700;
 }
 
-ul.summary-options-group {}
+ul.summary-options-group {
+    padding: 0;
+    margin: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.summary-options-group li {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    height: 56px;
+    font-size: 1.125rem;
+}
+
+.item-wrap {
+    display: flex;
+    margin-left: 1rem;
+}
+
+
+.item-wrap img {
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+
+.item-wrap p {
+    margin-left: 0.75rem;
+    font-weight: 500;
+
+}
+
+.summary-score em {
+    padding-left: .5rem;
+    font-style: normal;
+    opacity: 0.5;
+}
+
+.summary-score {
+    font-weight: 700;
+    margin-right: 1rem;
+    color: var(--dark-gray-blue);
+}
 
 button {
-    background-color: hsl(224, 30%, 27%);
+    margin: 2.5rem;
+    margin-top: 41px;
+    background-color: var(--dark-gray-blue);
     color: hsl(0, 0%, 100%);
+    border-radius: 128px;
+
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem;
+    width: 288px;
+    height: 56px;
+    border: 0;
+
 }
 
 #reaction {
     color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 5%);
 }
 
 #memory {
     color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 5%);
 }
 
 #verbal {
     color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 5%);
 }
 
 #visual {
     color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 5%);
 }
