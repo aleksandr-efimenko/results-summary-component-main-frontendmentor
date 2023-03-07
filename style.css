@@ -30,6 +30,7 @@ h2 {
 
 .card {
     width: 736px;
+    min-width: 736px;
     height: 512px;
     background-color: hsl(0, 0%, 100%);
     display: flex;
@@ -152,14 +153,17 @@ button {
     background-color: var(--dark-gray-blue);
     color: hsl(0, 0%, 100%);
     border-radius: 128px;
-
     font-weight: 500;
     font-style: normal;
     font-size: 1.125rem;
-    width: 288px;
+    width: 80%;
     height: 56px;
     border: 0;
+    cursor: pointer;
+}
 
+button:active {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 #reaction {
@@ -181,3 +185,31 @@ button {
     color: hsl(234, 85%, 45%);
     background-color: hsla(234, 85%, 45%, 5%);
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+    .card {
+        flex-direction: column;
+        border-radius: 0;
+        min-width: 0;
+        height: 100%;
+    }
+    .card, .score-card, .summary-card {
+        width: 100%;
+    }
+    .score-card {
+        border-radius: 0 0 32px 32px;
+    }
+    h2 {
+        font-size: 1.125rem;
+    }
+    .score-number-round-container {
+        height: 140px;
+        width: 140px;
+    }
+
+
+}
+    
