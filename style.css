@@ -260,3 +260,10 @@ button:active {
     }
 }
     
+
+.attribution {
+    color: black;
+    position: absolute;
+    bottom: 1rem;
+
+}
