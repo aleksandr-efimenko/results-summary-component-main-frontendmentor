@@ -44,7 +44,7 @@ h2 {
 }
 
 .score-card h2 {
-    margin: 2.375rem;
+    margin: 2.375rem auto 35px;
 }
 
 .light-lavender {
@@ -75,6 +75,7 @@ h2 {
     font-size: 1.125rem;
     font-weight: 500;
     margin: 0;
+    margin-top: 0.25rem;
     opacity: 0.52;
 }
 
@@ -92,10 +93,13 @@ h2 {
 
 .summary-card {
     width: 50%;
+    height: 100%;
 }
-
+.summary-card-container {
+    margin: 2.375rem 2.5rem 2.875rem 2.5rem;
+}
 .summary-card h2 {
-    margin: 2.375rem 2.5rem 1.75rem 2.5rem;
+    margin: 0;
     text-align: left;
     color: hsl(224, 30%, 27%);
     font-weight: 700;
@@ -103,7 +107,8 @@ h2 {
 
 ul.summary-options-group {
     padding: 0;
-    margin: 0 2.5rem;
+    margin: 0;
+    margin-top: 1.75rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -119,6 +124,7 @@ ul.summary-options-group {
 
 .item-wrap {
     display: flex;
+    margin: auto;
     margin-left: 1rem;
 }
 
@@ -132,7 +138,6 @@ ul.summary-options-group {
 .item-wrap p {
     margin-left: 0.75rem;
     font-weight: 500;
-
 }
 
 .summary-score em {
@@ -148,15 +153,15 @@ ul.summary-options-group {
 }
 
 button {
-    margin: 2.5rem;
+    /* margin: 2.5rem; */
     margin-top: 41px;
     background-color: var(--dark-gray-blue);
     color: hsl(0, 0%, 100%);
     border-radius: 128px;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.125rem;
-    width: 80%;
+    width: 100%;
     height: 56px;
     border: 0;
     cursor: pointer;
@@ -190,6 +195,9 @@ button:active {
     body {
         align-items: flex-start;
     }
+    h2 {
+        font-size: 1.125rem;
+    }
     .card {
         flex-direction: column;
         border-radius: 0;
@@ -201,15 +209,53 @@ button:active {
     }
     .score-card {
         border-radius: 0 0 32px 32px;
+        height: 356px;
     }
-    h2 {
-        font-size: 1.125rem;
+    .score-card h2 {
+        margin: 1.5rem auto;
     }
+
     .score-number-round-container {
+        margin-top: 1.5rem;
         height: 140px;
         width: 140px;
     }
+    .score-number-round-container h3 {
+        font-size: 3.5rem;
+        margin: 0;
+        line-height: 4.5rem;
+    }
+    .score-number-round-container p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .score-description {
+        margin: 1.5rem 3.625rem 2.5rem;
+    }
+    .score-description h1 {
+        font-size: 1.5rem;
+        line-height: 31px;
+    }
+    .score-description p {
+        margin: 0;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
 
-
+    .summary-card-container {
+        margin: 1.5rem 1.875rem 1.875rem 1.875rem;
+    }
+    .summary-card-container h2 {
+        margin-left: 0.125rem;
+    }
+    ul.summary-options-group {
+        margin-top: 1.5rem;
+    }
+    .summary-options-group li {
+        font-size: 1rem;
+    }
+    button {
+        margin-top: 1.5rem;
+    }
 }
     
